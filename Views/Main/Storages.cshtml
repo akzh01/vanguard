@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Vanguard.Models.Storage>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Capacity</th>
+            <th>Availibility</th>
+            <th>Address</th>
+        </tr>
+        @foreach (var s in Model)
+        {
+            <tr>
+                <td>@s.Id</td>
+                <td>@s.Capacity</td>
+                <td>@s.Availibility</td>
+                <td>@s.Address</td>
+            </tr>
+        }
+    </table>
+</body>
+</html>

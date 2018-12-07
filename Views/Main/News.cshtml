@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Vanguard.Models.News>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Content</th>
+            <th>Author</th>
+        </tr>
+        @foreach (var n in Model)
+        {
+            <tr>
+                <td>@n.Id</td>
+                <td>@n.Title</td>
+                <td>@n.Content</td>
+                <td>@n.Author</td>
+            </tr>
+        }
+    </table>
+
+</body>
+</html>

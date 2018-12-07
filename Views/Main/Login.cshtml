@@ -1,0 +1,21 @@
+﻿@model Vanguard.Models.Users
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Authorization</title>
+</head>
+<body>
+    <form asp-action="Login" method="post">
+        <div>
+            <label asp-for="Login"></label>
+            <input asp-for="Login" />
+            <span asp-validation-for="Login"></span>
+        </div>
+        <div>
+            <label asp-for="Password"></label>
+            <input asp-for="Password" />
+            <span asp-validation-for="Password"></span>
+        </div>
+        <input type="submit" value="Log in" />
+    </form>
+</body>
+</html>

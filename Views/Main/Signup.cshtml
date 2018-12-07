@@ -1,0 +1,23 @@
+﻿@using Vanguard.Models
+@model Users
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Create New User</title>
+</head>
+<body>
+    <h3>In order to sign up please fill in following data</h3>
+    <form method="post">
+        <div>
+            <label asp-for="Login"></label>
+            <input asp-for="Login" />
+            <span asp-validation-for="Login"></span>
+        </div>
+        <div>
+            <label asp-for="Password"></label>
+            <input asp-for="Password" />
+            <span asp-validation-for="Password"></span>
+        </div>
+        <input type="submit" name="add" value="Add" />
+    </form>
+</body>
+</html>

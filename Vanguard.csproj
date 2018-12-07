@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
+    <Folder Include="Views\" />
+    <Folder Include="Views\Main\" />
+    <Folder Include="Services\" />
+    <Folder Include="Data\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.4" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20181207130850_InitialCreate.cs" />
+    <Compile Remove="Migrations\VanguardDbContextModelSnapshot.cs" />
+    <Compile Remove="Migrations\20181207131054_InitialCreate.cs" />
+    <Compile Remove="Migrations\20181207133334_InitialCreate.cs" />
+    <Compile Remove="Migrations\20181207133334_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20181207135448_InitialCreate.cs" />
+  </ItemGroup>
+</Project>
