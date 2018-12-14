@@ -9,7 +9,7 @@ using Vanguard.Data;
 namespace Vanguard.Migrations
 {
     [DbContext(typeof(VanguardDbContext))]
-    [Migration("20181207141759_InitialCreate")]
+    [Migration("20181214150607_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

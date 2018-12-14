@@ -19,13 +19,4 @@
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.1.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.4" PrivateAssets="All" />
   </ItemGroup>
-
-  <ItemGroup>
-    <Compile Remove="Migrations\20181207130850_InitialCreate.cs" />
-    <Compile Remove="Migrations\VanguardDbContextModelSnapshot.cs" />
-    <Compile Remove="Migrations\20181207131054_InitialCreate.cs" />
-    <Compile Remove="Migrations\20181207133334_InitialCreate.cs" />
-    <Compile Remove="Migrations\20181207133334_InitialCreate.Designer.cs" />
-    <Compile Remove="Migrations\20181207135448_InitialCreate.cs" />
-  </ItemGroup>
 </Project>
